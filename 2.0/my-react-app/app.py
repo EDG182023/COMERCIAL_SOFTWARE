@@ -15,7 +15,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "*"}})  # Permitir acceso desde cualquier origen para rutas de la API
 
 def get_db_connection():
-    conn = pyodbc.connect('DRIVER={SQL Server};SERVER=ESADC01;DATABASE=GestionTarifas;UID=sa;PWD=ESA.2008')
+    conn = pyodbc.connect('DRIVER={SQL Server};')
     return conn
 
 
